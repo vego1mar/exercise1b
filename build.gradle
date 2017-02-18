@@ -4,7 +4,7 @@ group 'wdsr.uni.lodz.pl'
 subprojects {
 	version '1.0'
 	
-	// Dołącza standardowa wtyczkę, które udostępnia operacje związane z kodem Java.
+	// Dołącza standardowa wtyczkę, która udostępnia operacje związane z kodem Java.
 	apply plugin: 'java'
 
 	// Określa wersję Java, której używa aplikacja (1.8 = Java 8)
