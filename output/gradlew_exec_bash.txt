@@ -1,0 +1,82 @@
+Aurelius@AURELIUS-COMP MINGW64 ~
+$ cd /y/Projekty/WDSR/exercise1b/
+
+Aurelius@AURELIUS-COMP MINGW64 /y/Projekty/WDSR/exercise1b (master)
+$ ls -la
+total 27
+drwxr-xr-x 1 Aurelius 197121    0 mar 19 16:40 ./
+drwxr-xr-x 1 Aurelius 197121    0 mar 19 16:40 ../
+drwxr-xr-x 1 Aurelius 197121    0 mar 19 16:40 .git/
+-rw-r--r-- 1 Aurelius 197121  271 mar 19 16:40 .gitignore
+-rw-r--r-- 1 Aurelius 197121  565 mar 19 16:40 build.gradle
+drwxr-xr-x 1 Aurelius 197121    0 mar 19 16:40 calculator/
+drwxr-xr-x 1 Aurelius 197121    0 mar 19 16:40 conversions/
+drwxr-xr-x 1 Aurelius 197121    0 mar 19 16:40 gradle/
+-rwxr-xr-x 1 Aurelius 197121 5244 mar 19 16:40 gradlew*
+-rw-r--r-- 1 Aurelius 197121 2404 mar 19 16:40 gradlew.bat
+-rw-r--r-- 1 Aurelius 197121   35 mar 19 16:40 settings.gradle
+
+Aurelius@AURELIUS-COMP MINGW64 /y/Projekty/WDSR/exercise1b (master)
+$ gradlew run -Dexec.args="2 -3 5"
+bash: gradlew: command not found
+
+Aurelius@AURELIUS-COMP MINGW64 /y/Projekty/WDSR/exercise1b (master)
+$ /y/Projekty/WDSR/exercise1b/gradlew run -Dexec.args="2 -3 5"
+:conversions:compileJava
+:conversions:processResources UP-TO-DATE
+:conversions:classes
+:conversions:jar
+:calculator:compileJava
+:calculator:processResources UP-TO-DATE
+:calculator:classes
+:calculator:run
+Min=-3
+Max=5
+
+BUILD SUCCESSFUL
+
+Total time: 28.012 secs
+
+Aurelius@AURELIUS-COMP MINGW64 /y/Projekty/WDSR/exercise1b (master)
+$ /y/Projekty/WDSR/exercise1b/gradlew clean
+:calculator:clean
+:conversions:clean
+
+BUILD SUCCESSFUL
+
+Total time: 10.555 secs
+
+Aurelius@AURELIUS-COMP MINGW64 /y/Projekty/WDSR/exercise1b (master)
+$ /y/Projekty/WDSR/exercise1b/gradlew build
+:conversions:compileJava
+:conversions:processResources UP-TO-DATE
+:conversions:classes
+:conversions:jar
+:calculator:compileJava
+:calculator:processResources UP-TO-DATE
+:calculator:classes
+:calculator:jar
+:calculator:startScripts
+:calculator:distTar
+:calculator:distZip
+:calculator:assemble
+:calculator:compileTestJava UP-TO-DATE
+:calculator:processTestResources UP-TO-DATE
+:calculator:testClasses UP-TO-DATE
+:calculator:test UP-TO-DATE
+:calculator:check UP-TO-DATE
+:calculator:build
+:conversions:assemble
+:conversions:compileTestJava UP-TO-DATE
+:conversions:processTestResources UP-TO-DATE
+:conversions:testClasses UP-TO-DATE
+:conversions:test UP-TO-DATE
+:conversions:check UP-TO-DATE
+:conversions:build
+
+BUILD SUCCESSFUL
+
+Total time: 17.726 secs
+
+Aurelius@AURELIUS-COMP MINGW64 /y/Projekty/WDSR/exercise1b (master)
+$
